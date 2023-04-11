@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container {
+  margin: 0;
+  padding: 2rem 0;
+  color: #ffffff;
+  background: linear-gradient(#240e38 50%, #51227d, #240e38);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container h1 {
+  margin: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.todo-form {
+  background-color: #51227d;
+  width: 60%;
+  padding: 2rem 0;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.todo-form input,
+.todo-form textarea {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #7833b9;
+  font-family: "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  resize: none;
+}
+
+button {
+  min-width: 30%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: "Quicksand", system-ui;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #7833b9;
+  color: #ffffff;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  border: thin solid #ffffff;
+  cursor: pointer;
+}
+
+.tasks {
+  background-color: #2b1144;
+  border: 2px solid #7833b9;
+  width: 95%;
+  height: auto;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.task {
+  width: 30%;
+  background-color: #9f29ff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.task p {
+  max-width: 100%;
+  min-height: 150px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.task p.text-decoration {
+  text-decoration: line-through;
+}
